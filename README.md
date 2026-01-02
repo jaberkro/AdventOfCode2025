@@ -7,10 +7,10 @@ How to use it:
 - The answer will be printed in the command line
 
 Exceptions / extra work needed to prepare your input for these days:
-- Day01:\n
-  Change all 'L' characters in your input to '-'
-  Change all 'R' characters in your input to '+'
-- Day05:\n
-  Split your input into 2 different files:
-  - Database.txt -> In here you paste all the ranges (top part of the puzzle input) E.G. '3-5'
-  - Input.txt -> In here you paste all ingredient IDs that will be checked (bottom part of the puzzle input) E.G. '17'
+- Day01:
+  - Change all 'L' characters in your input to '-'
+  - Change all 'R' characters in your input to '+'
+- Day05:
+  - Split your input into 2 different files:
+    - Database.txt -> In here you paste all the ranges (top part of the puzzle input) E.G. '3-5'
+    - Input.txt -> In here you paste all ingredient IDs that will be checked (bottom part of the puzzle input) E.G. '17'
