@@ -6,6 +6,7 @@ How to use it:
 - In the command line, run the python code E.G. 'python3 Day02part1.py'
 - The answer will be printed in the command line
 
+
 Exceptions / extra work needed to prepare your input for these days:
 - Day01:
   - Change all 'L' characters in your input to '-'
