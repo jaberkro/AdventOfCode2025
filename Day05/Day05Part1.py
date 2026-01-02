@@ -1,5 +1,4 @@
 totalFresh = 0
-database = {}
 rangesList = []
 
 with open('Database.txt', 'r') as databaseFile:
