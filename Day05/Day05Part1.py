@@ -2,12 +2,12 @@ totalFresh = 0
 database = {}
 rangesList = []
 
-with open('TestDatabase.txt', 'r') as databaseFile:
+with open('Database.txt', 'r') as databaseFile:
     for line in databaseFile:
         ranges = line.split("-")
         rangesList.append(ranges)
 
-with open('TestInput.txt', 'r') as inputFile:
+with open('Input.txt', 'r') as inputFile:
     for line in inputFile:
         for ranges in rangesList:
             if int(ranges[0]) <= int(line) and int(ranges[1]) >= int(line):
