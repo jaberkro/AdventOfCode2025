@@ -3,6 +3,7 @@ totalPaths = 0
 
 def findPaths(fromLocation):
     pathsFound = 0
+
     if fromLocation == 'out':
         return 1
     for locations in devices[fromLocation]:

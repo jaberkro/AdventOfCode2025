@@ -4,6 +4,7 @@ total = 0
 def pressButton(currentLights, button):
     lightsToToggle = button.split(',')
     newLights = ''
+
     for lightIndex in range (0, len(currentLights)):
         for light in lightsToToggle:
             if lightIndex == int(light):
@@ -17,12 +18,14 @@ def pressButton(currentLights, button):
 
 def findButtonCombination(lightsGoal, currentLights, buttons, buttonIndex, amountButtonsPressed):
     minButtonsPressed = 2147483647
+
     if currentLights == lightsGoal:
         return amountButtonsPressed
     elif buttonIndex < len(buttons):
         buttonsPressed = findButtonCombination(lightsGoal, pressButton(currentLights, buttons[buttonIndex][1:-1]), buttons, buttonIndex + 1, amountButtonsPressed + 1)
         if buttonsPressed != -1 and buttonsPressed < minButtonsPressed:
             minButtonsPressed = buttonsPressed
+
         buttonsPressed = findButtonCombination(lightsGoal, currentLights, buttons, buttonIndex + 1, amountButtonsPressed)
         if buttonsPressed != -1 and buttonsPressed < minButtonsPressed:
             minButtonsPressed = buttonsPressed
